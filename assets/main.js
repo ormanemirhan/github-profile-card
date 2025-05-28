@@ -1,4 +1,4 @@
-const GITHUB_USERNAME = "username"; // Enter your username here
+const GITHUB_USERNAME = "ormanemirhan"; // Enter your username here
 
 (async function initProfile() {
     const card = document.querySelector('.profile-card');
