@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 2rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border: 1px solid #eaecef;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 3px solid #f0f0f0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-size: 1.6rem;
+    color: #24292f;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.username {
+    color: #656d76;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.bio {
+    color: #57606a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    padding: 0.8rem;
+    background: #f6f8fa;
+    border-radius: 8px;
+    border: 1px solid #eaecef;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #24292f;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #656d76;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.3rem;
+}
+
+.profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #24292f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.profile-link:hover {
+    background: #2d333b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(36,41,47,0.1);
+}
+
+.loading {
+    display: none;
+    color: #656d76;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
